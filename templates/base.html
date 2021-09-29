@@ -1,0 +1,91 @@
+<html>
+<head>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}" type="text/javascript"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="https://docs.python.org/3/library/asyncio.html" target="_blank">asyncio
+                        <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div>
+        <header class="business-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12  text-center">
+
+                        <hr>
+                        <h1 class="tagline">Asynchronous I/O</h1>
+                        <hr>
+                        <p>asyncio is a library to write concurrent code using the async/await syntax.
+
+                            asyncio is used as a foundation for multiple Python asynchronous frameworks that provide
+                            high-performance network and web-servers, database connection libraries, distributed task
+                            queues, etc.
+
+                            asyncio is often a perfect fit for IO-bound and high-level structured network code.</p>
+                        <br>
+                        <form>
+                            <a class="btn btn-success btn-md" id="async" href="#">Asynchronous Call</a>
+                            <a class="btn btn-success btn-md" id="sync" href="#">Synchronous Call</a>
+                        </form>
+                        <div id="loading-div">
+                            <iframe src="https://giphy.com/embed/tXL4FHPSnVJ0A" width="200" height="137" frameBorder="0"
+                                    class="giphy-embed" allowFullScreen></iframe>
+                            <div class="row justify-content-center">
+                                <div class="col-md-3 align-self-center alert alert-danger" role="alert">
+                                    Please wait .. Fetching Data from API
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                        <p><a target="_blank" href="https://api.zippopotam.us/">Zippopotam.us</a> API is used for
+                            getting postal code details in Ontario, Canada. For testing, we have used 270 API Calls
+                            using
+                            Postal codes </p>
+                        <p> Usage : https://api.zippopotam.us/ca/n7s, where N7S is postal code </p>
+                        <form>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"
+                                          id="basic-addon3"> API Processes Time in Seconds :</span>
+                                </div>
+                                <input type="text" class="form-control" id="basic-url"
+                                       aria-describedby="basic-addon3">
+                                <div class="input-group mb-3">
+                                     <span class="input-group-text"
+                                           id="basic-addon3"> Results :</span>
+                                    <textarea class="form-control" id="result_json_textarea" rows="3"></textarea>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="copyright">
+                            <p>© <span>2020</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+</body>
+</html>
